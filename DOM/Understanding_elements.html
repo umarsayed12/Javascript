@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM Understanding</title>
+</head>
+<body>
+    <div class="container">
+        <div class="day">Monday</div>
+        <div class="day">Tuesday</div>
+        <div class="day">Wednesday</div>
+        <div class="day">Thursday</div>
+    </div>
+</body>
+<script>
+    const colors = ["#FF5733","#9643FF","#40FF51","#FFF540 "]
+    const parent = document.querySelector(".container");
+    // for (let i = 0; i < parent.children.length; i++) {
+
+    //     console.log(parent.children[i].innerHTML);
+    //     if (colors[i] === "#9643FF") {
+    //         parent.children[i].style.fontSize = "1.5rem"
+    //     }
+    //     parent.children[i].style.color = colors[i]
+    // }
+    // console.log(parent.firstElementChild);
+    // console.log(parent.lastElementChild);
+
+    // const dayOne = document.querySelector('.day');
+    // console.log(dayOne.parentElement.className);
+    // console.log(dayOne.nextElementSibling);
+
+    console.log(parent.childNodes);
+</script>
+</html>
